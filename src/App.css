@@ -1,38 +1,230 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;800&display=swap');
+
+*{
+  font-family: 'Kumbh Sans', sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.navbar-brand{
+  text-decoration: none;
+  color: black;
+}
+.main-container{
+  height:100vh;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:14vh;
+  border-bottom:0.5px solid rgb(221, 218, 218);
+}
+.nav-item-container-left{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  width:35vw;
+  margin-left: 4rem;
+}
+.nav-item-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  height: 100px;
+  text-decoration: none;
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-item-container{
+  margin-top: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color:black;
+  cursor: pointer;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  height:14vh;
+  margin-left: 20px;
+  position: relative;
+  transform: translateY(var(--translate-y,0));
+}
+.nav-item::after{
+  content: "";
+  position: absolute;
+  width:0%;
+  background-color: rgb(223, 158, 39);
+  height: 3px;
+  left: 0;
+  bottom: 0.5px;
+}
+.nav-item-container-right{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width:10%;
+  height:14vh;
+  margin-right: 4rem;
+}
+.nav-item-cart{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-item-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avatar-img{
+  height: 7vh;
+  width:  7vh;
+}
+.cart-img{
+  height: 3vh;
+  width: 3vh;
+}
+.nav-item:hover{
+  cursor: pointer;
+  --translate-y:-2px;
+  
+}
+.nav-item:hover::after{
+  cursor: pointer;
+  width: 100%;
+  transition: 0.8s;
+}
+.body-container{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+.image-section{
+  height: 70vh;
+  width: 40vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.image-display{
+  height: 90%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-display img{
+  width:60%;
+  height: 100%;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border-radius: 1rem;
+}
+.image-choices{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-choice{
+  width: 12%;
+  height: 70%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+
+}
+
+.info-section{
+  height: 70vh;
+  width: 27vw;
+  display: flex;
+  flex-direction: column;
+
+}
+h5{
+  color: rgb(236, 168, 41);
+  margin-bottom: 1rem;
+}
+.info-section p{
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 13px;
+  margin-top: 2rem;
+  color: rgb(102, 106, 109);
+}
+.info-section section{
+  font-family: 'Kumbh Sans', sans-serif;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:40%;
+}
+.info-section section h4{
+  background-color: rgb(247, 221, 174);
+  color: rgb(207, 136, 4);
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+.info-section h4{
+display: inline-block;
+}
+.info-section span{  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 13px;
+  margin-top: 2rem;
+  color: rgb(102, 106, 109);
+  text-decoration: line-through;
+}
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+.add-btn{
+  background-color: rgb(255, 166, 0);
+  border: none;
+  font-family: 'Kumbh Sans', sans-serif;
+  width: 70%;
+  height: 45px;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
   color: white;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 44px;
+  padding-right: 44px;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.amount-btn{
+  border: none;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 800;
+  width: 20%;
+  height: 45px;
+  font-size: 25px;
+  color:orange;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
