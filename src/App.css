@@ -232,3 +232,7 @@ display: inline-block;
   color: black;
   cursor:default;
 }
+.selected{
+  border:1px solid orange;
+  opacity:0.6;
+}
