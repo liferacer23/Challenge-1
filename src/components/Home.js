@@ -8,7 +8,7 @@ import image3t from '../images/image-product-3-thumbnail.jpg';
 import image3 from '../images/image-product-3.jpg';
 import image4t from '../images/image-product-4-thumbnail.jpg';
 import image4 from '../images/image-product-4.jpg';
-import cart_image from '../images/icon-cart.svg';
+
 export default function Home() {
     return (
         <><div className="body-container">
