@@ -228,3 +228,7 @@ display: inline-block;
   border-radius: 0.5rem;
   cursor: pointer;
 }
+.amount{
+  color: black;
+  cursor:default;
+}
