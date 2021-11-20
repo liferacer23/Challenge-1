@@ -13,7 +13,7 @@ function App() {
      <Router>
      <Nav/>
      <Routes>
-       <Route path='/' exact element={<Home/>} ></Route>
+       <Route path='/Challenge-1' exact element={<Home/>} ></Route>
      </Routes>
      </Router>
    </div>
