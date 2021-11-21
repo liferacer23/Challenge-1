@@ -1,13 +1,13 @@
 import React from "react";
 import "../App.css";
 import { useState, useRef } from "react";
-import image1t from "../images/image-product-1-thumbnail.jpg";
+
 import image1 from "../images/image-product-1.jpg";
-import image2t from "../images/image-product-2-thumbnail.jpg";
+
 import image2 from "../images/image-product-2.jpg";
-import image3t from "../images/image-product-3-thumbnail.jpg";
+
 import image3 from "../images/image-product-3.jpg";
-import image4t from "../images/image-product-4-thumbnail.jpg";
+
 import image4 from "../images/image-product-4.jpg";
 
 export default function Home() {
@@ -48,33 +48,6 @@ export default function Home() {
                 alt=""
               />)
             })}
-            {/* <img
-              onClick={()=>{image_change(0)}}
-              id="image1"
-              className= {`image-choice ${active === 0 ? 'selected':''}`}
-              src={image1}
-              alt=""
-             
-            />
-            <img
-              id="image2"
-              onClick={()=>{image_change(1)}}
-              className={`image-choice ${active === 1 ? 'selected':''}`}
-              src={image2}
-              alt=""
-            />
-            <img
-              onClick={()=>{image_change(2)}}
-              className={`image-choice ${active === 2 ? 'selected':''}`}
-              src={image3}
-              alt=""
-            />
-            <img
-              onClick={()=>{image_change(3)}}
-              className={`image-choice ${active === 3 ? 'selected':''}`}
-              src={image4}
-              alt=""
-            /> */}
           </div>
         </div>
         <div className="info-section">
@@ -84,7 +57,7 @@ export default function Home() {
           <h1> Sneakers</h1>
 
           <p className="description">
-            {" "}
+            
             These low-profile sneakers are your perfect casual wear companion.
             Featuring a durable rubber outer sole, they’ll withstand everything
             the weather can offer.
