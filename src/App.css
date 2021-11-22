@@ -91,6 +91,7 @@
 .avatar-img{
   height: 7vh;
   width:  7vh;
+  border-radius: 180px;
 }
 .cart-img{
   height: 3vh;
@@ -237,7 +238,7 @@ display: inline-block;
   cursor:default;
 }
 .selected{
-  border:1px solid orange;
+  border:3px solid orange;
   opacity:0.7;
   cursor:pointer
 }

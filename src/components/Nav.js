@@ -8,9 +8,11 @@ import { NavLink } from "react-router-dom";
 export default function Nav() {
 
     const[toggle, setToggle]=useState(true);
-    console.log(toggle);
+    const[profile_select, setProfileSelected]=useState(false);
+ 
     const change_toggle =()=>{
         setToggle(!toggle);
+        setProfileSelected(!profile_select);
     }
     return (
         <div >
@@ -25,7 +27,7 @@ export default function Nav() {
             </div>
             <div className="nav-item-container-right">
             <NavLink className="nav-item-cart" to="#"><img className='cart-img' src={cart_image} alt="" /></NavLink>          
-            <NavLink onClick={change_toggle} className="nav-item-img" to="#"><img className='avatar-img' src={avatar_image} alt="" /></NavLink>          
+            <NavLink onClick={change_toggle} className="nav-item-img" to="#"><img className={`avatar-img ${profile_select?'selected':''}`} src={avatar_image} alt="" /></NavLink>          
             </div>
         </nav>
         <div className={`cart ${toggle?'hide':''}`}>
