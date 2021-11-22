@@ -381,14 +381,23 @@ display: inline-block;
 width: 5%;
 height: 10%;
 cursor: pointer;
+outline: none;
+border: none;
+background: transparent;
 }
 .image-carousel-display .next{
 width: 5%;
 height: 10%;
 cursor: pointer;
+outline: none;
+border: none;
+background: transparent;
 }
 .image-carousel .close{
   
   margin-left: 33%;
   cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
 }

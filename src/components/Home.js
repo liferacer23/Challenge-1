@@ -76,7 +76,7 @@ export default function Home() {
                   fill="#ffff"
                   fill-rule="nonzero"
                 />
-              </svg>
+              </svg>{" "}
               Add to cart
             </button>
           </div>
