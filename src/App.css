@@ -128,14 +128,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: opacity ease-in-out 0.8s;
 }
+
 .image-display img{
   width:60%;
   height: 100%;
   margin-right: 1rem;
   margin-left: 1rem;
   border-radius: 1rem;
+  opacity: 0;
 }
+.show{opacity: 1;}
 .image-choices{
   height: 100px;
   width: 100%;
@@ -236,4 +240,30 @@ display: inline-block;
   border:1px solid orange;
   opacity:0.7;
   cursor:pointer
+}
+.fade-appear{
+  opacity:0;
+  z-index: 1;
+}
+.fade-appear.fade-appear-active{
+  opacity:1;
+  transition: opacity 800ms ease-in;
+}
+.fade-enter{
+  opacity:0;
+  z-index: 1;
+}
+.fade-enter.fade-enter-active{
+  opacity:1;
+  transition: opacity 800ms linear 500ms;
+}
+.fade-exit{
+  opacity:0;
+}
+.fade-exit.fade-exit-active{
+  opacity:1;
+  transition: opacity 800ms linear;
+}
+.fade-exit-done{
+  opacity:0;
 }

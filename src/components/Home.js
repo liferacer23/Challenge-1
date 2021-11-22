@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
-import { useState, useRef } from "react";
-
+import { useState } from "react";
+import { motion} from 'framer-motion';
 import image1 from "../images/image-product-1.jpg";
 
 import image2 from "../images/image-product-2.jpg";
@@ -9,55 +9,47 @@ import image2 from "../images/image-product-2.jpg";
 import image3 from "../images/image-product-3.jpg";
 
 import image4 from "../images/image-product-4.jpg";
-
+import Image_display from "./Image_display";
 export default function Home() {
-  const images =  [
-    image1 ,
-    image2 ,
-    image3 ,
-    image4
-  ]
+  const images = [image1, image2, image3, image4];
 
   const [active, setActive] = useState(0);
   const [selected, setSelected] = useState(image1);
-  const elem = useRef(null);
 
-  const image_change =(i)=>{
-        setSelected(images[i]);
-        setActive(i);
-  }
+  const image_change = (i) => {
+    setSelected(images[i]);
+    setActive(i);
+  };
 
   return (
     <>
       <div className="body-container">
         <div className="image-section">
-          <div className="image-display">
-            <img className="image-dispalyed" src={selected} alt="" />
-          </div>
-          <div  className="image-choices">
-            
+          <Image_display active={active} selected={selected} />
+
+          <div className="image-choices">
             {images.map((elements, id) => {
-             return( <img
-                key={id}
-                onClick={()=>{
-                    
-                    image_change(id)
-                }}
-                className={`image-choice ${active === id ? 'selected':''}`}
-                src={elements}
-                alt=""
-              />)
+              return (
+                <img
+                  key={id}
+                  onClick={() => {
+                    image_change(id);
+                  }}
+                  className={`image-choice ${active === id ? "selected" : ""}`}
+                  src={elements}
+                  alt=""
+                />
+              );
             })}
           </div>
         </div>
-        <div className="info-section">
-          <h5>Sneaker Company</h5>
+        <div animate={{fontSize:30}} className="info-section">
+          <h5 >Sneaker Company</h5>
 
           <h1>Fall Limited Edition</h1>
           <h1> Sneakers</h1>
 
           <p className="description">
-            
             These low-profile sneakers are your perfect casual wear companion.
             Featuring a durable rubber outer sole, they’ll withstand everything
             the weather can offer.
@@ -90,7 +82,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div class="attribution">
+      <div className="attribution">
         Challenge by{" "}
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
           Frontend Mentor
