@@ -267,3 +267,64 @@ display: inline-block;
 .fade-exit-done{
   opacity:0;
 }
+
+.cart{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width:21vw;
+  background-image:linear-gradient(to top right,rgba(256,256,256,0.8),rgba(256,256,256,0.9));
+  height:30vh;
+  padding:0.5rem 1rem;
+  position: absolute;
+  left:73%;
+  backdrop-filter:blur(4px);
+}
+.cart h4{
+  width: 100%;
+  border-bottom:0.5px solid rgb(221, 218, 218);
+}
+.cart button{
+  width: 100%;
+  background-color: rgb(255, 166, 0);
+  border: none;
+  font-family: 'Kumbh Sans', sans-serif;
+  height: 40px;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+.cart section{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.cart-section .shoe-in-cart{
+  width:40px;
+  height: 40px;
+  cursor: pointer;
+}
+.cart p{
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 13px;
+  
+  color: rgb(102, 106, 109);
+}
+.cart-section p span{
+  font-weight: 100;
+}
+.cart-section .delete_button{
+  width:10px;
+  height: 13px;
+  cursor: pointer;
+}
+.cart-section h6{
+  margin-top: 6px;
+}
+.hide{
+  display: none;
+}

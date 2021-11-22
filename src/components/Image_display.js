@@ -6,8 +6,8 @@ export default function Image_display({active,selected}) {
     let image_container = useRef(null);
     let image = useRef(null);
  useEffect(()=>{
-    gsap.to(image.current,0.8,{
-        delay:0.9,
+    gsap.to(image.current,0.7,{
+        delay:0.7,
         opacity:1
 
     });
