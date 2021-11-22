@@ -130,6 +130,7 @@
   align-items: center;
   justify-content: center;
   transition: opacity ease-in-out 0.8s;
+  cursor: pointer;
 }
 
 .image-display img{
