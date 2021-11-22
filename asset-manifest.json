@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Challenge-1/static/css/main.570ca642.chunk.css",
-    "main.js": "/Challenge-1/static/js/main.51d0877f.chunk.js",
-    "main.js.map": "/Challenge-1/static/js/main.51d0877f.chunk.js.map",
+    "main.css": "/Challenge-1/static/css/main.44eb8774.chunk.css",
+    "main.js": "/Challenge-1/static/js/main.fd9e592c.chunk.js",
+    "main.js.map": "/Challenge-1/static/js/main.fd9e592c.chunk.js.map",
     "runtime-main.js": "/Challenge-1/static/js/runtime-main.04658ffb.js",
     "runtime-main.js.map": "/Challenge-1/static/js/runtime-main.04658ffb.js.map",
     "static/js/2.80010ab5.chunk.js": "/Challenge-1/static/js/2.80010ab5.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.7195b01e.chunk.js": "/Challenge-1/static/js/3.7195b01e.chunk.js",
     "static/js/3.7195b01e.chunk.js.map": "/Challenge-1/static/js/3.7195b01e.chunk.js.map",
     "index.html": "/Challenge-1/index.html",
-    "static/css/main.570ca642.chunk.css.map": "/Challenge-1/static/css/main.570ca642.chunk.css.map",
+    "static/css/main.44eb8774.chunk.css.map": "/Challenge-1/static/css/main.44eb8774.chunk.css.map",
     "static/js/2.80010ab5.chunk.js.LICENSE.txt": "/Challenge-1/static/js/2.80010ab5.chunk.js.LICENSE.txt",
     "static/media/icon-cart.539ec608.svg": "/Challenge-1/static/media/icon-cart.539ec608.svg",
     "static/media/icon-close.c3904486.svg": "/Challenge-1/static/media/icon-close.c3904486.svg",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.04658ffb.js",
     "static/js/2.80010ab5.chunk.js",
-    "static/css/main.570ca642.chunk.css",
-    "static/js/main.51d0877f.chunk.js"
+    "static/css/main.44eb8774.chunk.css",
+    "static/js/main.fd9e592c.chunk.js"
   ]
 }
