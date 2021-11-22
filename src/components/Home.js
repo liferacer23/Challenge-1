@@ -10,12 +10,13 @@ import image3 from "../images/image-product-3.jpg";
 
 import image4 from "../images/image-product-4.jpg";
 import Image_display from "./Image_display";
+import Image_carousel from "./Image_carousel";
 export default function Home() {
   const images = [image1, image2, image3, image4];
 
   const [active, setActive] = useState(0);
   const [selected, setSelected] = useState(image1);
-
+  const [carousel_display,setCarousel_Display]=useState(false);
   const image_change = (i) => {
     setSelected(images[i]);
     setActive(i);
@@ -25,8 +26,7 @@ export default function Home() {
     <>
       <div className="body-container">
         <div className="image-section">
-          <Image_display active={active} selected={selected} />
-
+          <Image_display carousel={carousel_display} setCarousel={setCarousel_Display} active={active} selected={selected} />
           <div className="image-choices">
             {images.map((elements, id) => {
               return (
@@ -76,12 +76,13 @@ export default function Home() {
                   fill="#ffff"
                   fill-rule="nonzero"
                 />
-              </svg>{" "}
+              </svg>
               Add to cart
             </button>
           </div>
         </div>
       </div>
+      <Image_carousel carousel={carousel_display} setCarousel={setCarousel_Display}/>
     </>
   );
 }

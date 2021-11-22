@@ -138,7 +138,7 @@
   margin-right: 1rem;
   margin-left: 1rem;
   border-radius: 1rem;
-  opacity: 0;
+  
 }
 .show{opacity: 1;}
 .image-choices{
@@ -328,4 +328,66 @@ display: inline-block;
 }
 .hide{
   display: none;
+}
+
+
+.image-carousel{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-image:linear-gradient(to top right,rgba(256,256,256,0.5),rgba(256,256,256,0.6));
+  backdrop-filter:blur(5px);
+  top:0;
+  padding: 4rem;
+  position: absolute;
+}
+.image-carousel-display{
+  height: 100%;
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-carousel-display img{
+  width:60%;
+  height: 100%;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border-radius: 1rem;
+  
+}
+.image-carousel-choices{
+  height: 140px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-carousel-choice{
+  width: 12%;
+  height: 90%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.image-carousel-display .previous{
+width: 5%;
+height: 10%;
+cursor: pointer;
+}
+.image-carousel-display .next{
+width: 5%;
+height: 10%;
+cursor: pointer;
+}
+.image-carousel .close{
+  
+  margin-left: 33%;
+  cursor: pointer;
 }

@@ -1,23 +1,18 @@
-import React,{useRef,useEffect} from 'react'
+import React,{useState} from 'react'
 import "../App.css";
-import gsap from 'gsap';
-export default function Image_display({active,selected}) {
+import Image_carousel from "./Image_carousel";
+
+export default function Image_display({selected,carousel,setCarousel}) {
     
-    let image_container = useRef(null);
-    let image = useRef(null);
- useEffect(()=>{
-    gsap.to(image.current,0.7,{
-        delay:0.7,
-        opacity:1
 
-    });
- },active)
- 
-
+    const toggle =()=>{
+        setCarousel(!carousel)
+    }
     return (
-        <div ref={image_container} className="image-display">
-        <img ref={image} className="image-dispalyed" src={selected} alt="" />
-    </div>
+        
+        <div className="image-display" onClick={toggle}>
+            <img className="image-displayed" src={selected} alt="" />
+        </div>
   
     )
 }

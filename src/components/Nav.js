@@ -5,11 +5,13 @@ import avatar_image from '../images/image-avatar.png';
 import delete_button from '../images/icon-delete.svg';
 import image1 from "../images/image-product-1.jpg";
 import { NavLink } from "react-router-dom";
+
 export default function Nav() {
 
     const[toggle, setToggle]=useState(true);
     const[profile_select, setProfileSelected]=useState(false);
- 
+
+
     const change_toggle =()=>{
         setToggle(!toggle);
         setProfileSelected(!profile_select);
@@ -19,7 +21,7 @@ export default function Nav() {
         <nav className="navbar">
             <div className="nav-item-container-left">
             <NavLink className="nav-item-logo" to="./">sneakers</NavLink>
-            <NavLink className="nav-item" to="./">Collections</NavLink>
+            <NavLink className="nav-item" to="./Image_carousel">Collections</NavLink>
             <NavLink className="nav-item" to="./">Men</NavLink>
             <NavLink className="nav-item" to="./">Women</NavLink>
             <NavLink className="nav-item" to="./">About</NavLink>
@@ -30,11 +32,11 @@ export default function Nav() {
             <NavLink onClick={change_toggle} className="nav-item-img" to="#"><img className={`avatar-img ${profile_select?'selected':''}`} src={avatar_image} alt="" /></NavLink>          
             </div>
         </nav>
-        <div className={`cart ${toggle?'hide':''}`}>
+        <div  className={`cart ${toggle?'hide':''}`}>
             <h4>Cart</h4>
             <section className="cart-section">
                 <img src={image1} className="shoe-in-cart"alt="" />
-                <p>Fall limited Edition Sneakers <h6><span>$125 x 3 </span>375$.00</h6></p>
+                <p>Fall limited Edition Sneakers <h6><span>$125 x 3 </span>$375.00</h6></p>
                 <img className="delete_button" src={delete_button} alt="" />
             </section>
             <button className="check_out_btn">Check out</button>
