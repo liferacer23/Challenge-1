@@ -13,6 +13,7 @@ export default function Image_display({selected,carousel,setCarousel}) {
         <div className="image-display" onClick={toggle}>
             <img className="image-displayed" src={selected} alt="" />
         </div>
+        
   
     )
 }

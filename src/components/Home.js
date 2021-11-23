@@ -21,7 +21,7 @@ export default function Home() {
     setSelected(images[i]);
     setActive(i);
   };
-
+  
   return (
     <>
       <div className="body-container">
@@ -82,7 +82,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Image_carousel carousel={carousel_display} setCarousel={setCarousel_Display}/>
+
+      < Image_carousel carousel={carousel_display} setCarousel={setCarousel_Display}/>
+      
     </>
   );
 }

@@ -401,3 +401,7 @@ background: transparent;
   border: none;
   background: transparent;
 }
+.main-container{
+  max-height: 100vh;
+  overflow: hidden;
+}

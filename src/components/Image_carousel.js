@@ -19,19 +19,42 @@ export default function Image_carousel({carousel,setCarousel}) {
   const close_carousel =()=>{
       setCarousel(!carousel);
   }
+  const previous_image =(active,selected)=>{
+    if(active<0){
+      setActive(active=0);
+        setSelected(images[0]);
+      } 
+      else
+      setActive(active-1);
+       setSelected(images[active])
+       console.log(active);
+   
+  }
+  const next_image =(active)=>{
+ if(active>=3){
+   setActive(active=0);
+   setSelected(images[active]);
+     console.log("gyhujik");
+   } 
+   else
+   setActive(active+1);
+    setSelected(images[active+1])
+    console.log(active);
+
+  }
   return (
     <div className={`image-carousel${carousel?'':'hide'}`}>
       <button className="close"  onClick={close_carousel}>
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="orange" fillRule="evenodd"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="orange"/></svg>
       </button>
 
       <div className="image-carousel-display">
-        <button className="previous"> 
-        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18"><path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+        <button className="previous" onClick={()=>{previous_image(active)}}> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18"><path d="M11 1 3 9l8 8" stroke="#1D2026" strokeWidth="3" fill="none" /></svg>
         </button>
         <img className="image-displayed" src={selected} alt="" />
-        <button className="next">
-        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="18"><path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+        <button className="next" onClick={()=>{next_image(active)}}>
+        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="18"><path d="m2 1 8 8-8 8" stroke="#1D2026" strokeWidth="3" fill="none" /></svg>
         </button>
         
       </div>
