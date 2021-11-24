@@ -405,3 +405,345 @@ background: transparent;
   max-height: 100vh;
   overflow: hidden;
 }
+
+@media all and (max-width:2222px){
+  .toggler{display: none;}
+}
+@media all and (max-width:1222px){
+  .image-section{
+    width: 42vw;
+  }
+  .info-section{
+    width: 40vw;
+  }
+  .toggler{display: none;}
+}
+@media all and (max-width:1087px){
+  .image-section{
+    width: 42vw;
+  }
+  .info-section{
+    width: 40vw;
+  }
+}
+@media all and (max-width:992px){
+  .image-section{
+    width: 46vw;
+  }
+  .info-section{
+    width: 45vw;
+  }
+}
+@media all and (max-width:872px){
+  .image-section{
+    width: 70vw;
+  }
+  .info-section{
+    width: 50vw;
+  }
+}
+@media all and (max-width:842px){
+
+  .image-section{
+    width: 100%;
+    clear: both;
+  }
+  .info-section{
+    width: 100%;
+  }
+}
+@media all and (max-width:773px){
+ 
+ .main-container{
+   overflow: visible;
+ }
+ .image-carousel-choices{
+   display: none;
+ }
+ .close{
+   display: none;
+ }
+  .image-carousel-display{
+    display:flex;
+    position: absolute;
+    top:15%;
+    height: 60vh;
+    width: 70vw;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+  }
+ 
+  .image-section{
+   display: none;
+  }
+  .info-section{
+    width: 60%;
+    margin-top: 85%;
+  }
+}
+@media all and (max-width:639px){
+  .nav-item-logo{
+      margin: 0 auto;
+  }
+  .image-carousel-display{
+    top:12%;
+    width: 100%;
+    margin:auto;
+  }
+  .navbar{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    padding-left: 5rem;
+  }
+  .nav-item {
+    display: none;
+  }
+  .toggler{
+    color: orange;
+    display: inline-block;
+    
+  }
+  .nav-item-container-right{
+    margin-left: 3rem;
+  }
+  .info-section{
+    width: 60%;
+    margin-top: 100%;
+  }
+  
+}
+@media all and (max-width:580px){
+  .info-section{
+    width: 90%;
+    margin-top: 120%;
+  }
+  .image-carousel-display{
+    top:12%;
+    width: 100%;
+    margin:auto;
+    height: 35vh;
+  }
+}
+@media all and (max-width:800px){
+  .info-section{
+    width: 90%;
+    margin-top: 120%;
+  }
+  .image-carousel-display{
+    top:12%;
+    width: 100%;
+    margin:auto;
+    height: 45vh;
+  }
+}
+@media all and (max-width:494px){
+  .info-section{
+    width: 90%;
+    margin-top: 130%;
+  }
+  .image-carousel-display{
+    top:12%;
+    width: 100%;
+    margin:auto;
+    height: 35vh;
+  }
+}
+@media all and (max-width:412px){
+  .info-section{
+    width: 90%;
+    margin-top: 155%;
+  }
+  .image-carousel-display{
+    top:12%;
+    width: 100%;
+    margin:auto;
+    height: 35vh;
+  }
+  
+}
+@media all and (max-width:451px){
+  .info-section{
+    width: 90%;
+    margin-top: 140%;
+  }
+  .image-carousel-display{
+    top:12%;
+    width: 100%;
+    margin:auto;
+    height: 35vh;
+  }
+  
+}
+@media all and (max-width:394px){
+  .info-section{
+    width: 90%;
+    margin-top: 140%;
+  }
+  .image-carousel-display{
+    top:12%;
+    width: 100%;
+    margin:auto;
+    height: 35vh;
+  }
+  
+}
+@media all and (max-width:369px){
+  .info-section{
+    width: 90%;
+    margin-top: 130%;
+  }
+  .image-carousel-display{
+    top:12%;
+    width: 100%;
+    height: 35vh;
+    margin:auto;
+  }
+  
+}
+@media all and (max-width:363px){
+  .navbar .toggler{
+    margin-left: 5rem;
+  }
+  .navbar .nav-item-container-right{
+    margin-right: 5rem;
+  }
+  
+}
+@media all and (max-width:301px){
+  .info-section{
+    width: 90%;
+    margin-top: 200%;
+  }
+  .image-carousel-display{
+    top:12%;
+    width: 100%;
+    height: 40vh;
+    
+  }
+  
+}
+@media all and (max-width:331px){
+  .info-section{
+    width: 90%;
+    margin-top: 150%;
+  }
+  .image-carousel-display{
+    top:12%;
+    width: 100%;
+    height: 45vh;
+    
+  }
+  
+}
+@media all and (max-width:361px){
+  .info-section{
+    width: 90%;
+    margin-top: 160%;
+  }
+  .image-carousel-display{
+    top:12%;
+    width: 100%;
+    height: 35vh;
+    
+  }
+  .navbar{
+    padding: 0 0.5rem;
+  }
+  
+}
+@media all and (max-width:261px){
+  .info-section{
+    width: 90%;
+    margin-top: 150%;
+  }
+  .image-carousel-display{
+    top:12%;
+    width: 100%;
+    height: 30vh;
+  }
+  .navbar{
+    padding: 0 1rem;
+  }
+  
+}
+@media all and (max-width:281px){
+  .info-section{
+    width: 90%;
+    margin-top: 150%;
+  }
+  .image-carousel-display{
+    top:12%;
+    width: 100%;
+    height: 30vh;
+  }
+  
+}
+@media all and (max-width:227px){
+  .info-section{
+    width: 90%;
+    margin-top: 180%;
+  }
+  .image-carousel-display{
+    top:12%;
+    width: 100%;
+    height: 30vh;
+    margin-left:1rem;
+  }
+  
+}
+@media all and (max-width:189px){
+  .info-section{
+    width: 90%;
+    margin-top: 220%;
+  }
+  .image-carousel-display{
+    top:12%;
+    width: 100%;
+    height: 30vh;
+    margin-left:2rem;
+  }
+  
+}
+@media all and (max-width:155px){
+  .info-section{
+    width: 90%;
+    margin-top: 240%;
+  }
+  .image-carousel-display{
+    top:12%;
+    width: 100%;
+    height: 30vh;
+    margin-left:2rem;
+  }
+  
+}
+@media all and (max-width:135px){
+  .info-section{
+    width: 90%;
+    margin-top: 280%;
+  }
+  .image-carousel-display{
+    top:12%;
+    width: 100%;
+    height: 30vh;
+    margin-left:2rem;
+  }
+  
+}
+@media all and (max-width:121px){
+  .info-section{
+    width: 90%;
+    margin-top: 300%;
+  }
+  .image-carousel-display{
+    top:12%;
+    width: 100%;
+    height: 30vh;
+    margin-left:2rem;
+  }
+  
+}

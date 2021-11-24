@@ -5,6 +5,7 @@ import avatar_image from '../images/image-avatar.png';
 import delete_button from '../images/icon-delete.svg';
 import image1 from "../images/image-product-1.jpg";
 import { NavLink } from "react-router-dom";
+import {CgMenu} from 'react-icons/cg'
 
 export default function Nav() {
 
@@ -19,9 +20,10 @@ export default function Nav() {
     return (
         <div >
         <nav className="navbar">
+            <button className="toggler"><CgMenu/></button>
             <div className="nav-item-container-left">
             <NavLink className="nav-item-logo" to="./">sneakers</NavLink>
-            <NavLink className="nav-item" to="./Image_carousel">Collections</NavLink>
+            <NavLink className="nav-item" to="">Collections</NavLink>
             <NavLink className="nav-item" to="./">Men</NavLink>
             <NavLink className="nav-item" to="./">Women</NavLink>
             <NavLink className="nav-item" to="./">About</NavLink>

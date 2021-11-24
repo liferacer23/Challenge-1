@@ -24,6 +24,7 @@ export default function Home() {
   
   return (
     <>
+    
       <div className="body-container">
         <div className="image-section">
           <Image_display carousel={carousel_display} setCarousel={setCarousel_Display} active={active} selected={selected} />
@@ -83,8 +84,8 @@ export default function Home() {
         </div>
       </div>
 
-      < Image_carousel carousel={carousel_display} setCarousel={setCarousel_Display}/>
       
+      < Image_carousel carousel={carousel_display} setCarousel={setCarousel_Display}/>      
     </>
   );
 }
