@@ -1,7 +1,10 @@
 import React from "react";
 import "../App.css";
 import { useState } from "react";
-import { motion} from 'framer-motion';
+import { motion } from "framer-motion";
+import { useSelector, useDispatch } from "react-redux";
+import { bindActionCreators } from "redux";
+import { action_creators } from "../redux/Action-Creators";
 import image1 from "../images/image-product-1.jpg";
 
 import image2 from "../images/image-product-2.jpg";
@@ -9,25 +12,46 @@ import image2 from "../images/image-product-2.jpg";
 import image3 from "../images/image-product-3.jpg";
 
 import image4 from "../images/image-product-4.jpg";
+
 import Image_display from "./Image_display";
 import Image_carousel from "./Image_carousel";
+
 export default function Home() {
+  const amounts = useSelector((state) => state.amounts);
+  const price = useSelector((state) => state.price);
+  
+  
+  const dispatch = useDispatch();
+  
+  const { decrement_Amount, increment_Amount,multiply } =
+    bindActionCreators(action_creators, dispatch);
+
   const images = [image1, image2, image3, image4];
 
   const [active, setActive] = useState(0);
   const [selected, setSelected] = useState(image1);
-  const [carousel_display,setCarousel_Display]=useState(false);
+  const [carousel_display, setCarousel_Display] = useState(false);
+
   const image_change = (i) => {
     setSelected(images[i]);
     setActive(i);
   };
-  
+ 
+  const multi_ply =()=>{
+        multiply(amounts);
+        
+
+  }
   return (
     <>
-    
       <div className="body-container">
         <div className="image-section">
-          <Image_display carousel={carousel_display} setCarousel={setCarousel_Display} active={active} selected={selected} />
+          <Image_display
+            carousel={carousel_display}
+            setCarousel={setCarousel_Display}
+            active={active}
+            selected={selected}
+          />
           <div className="image-choices">
             {images.map((elements, id) => {
               return (
@@ -44,8 +68,8 @@ export default function Home() {
             })}
           </div>
         </div>
-        <div animate={{fontSize:30}} className="info-section">
-          <h5 >Sneaker Company</h5>
+        <div className="info-section">
+          <h5>Sneaker Company</h5>
 
           <h1>Fall Limited Edition</h1>
           <h1> Sneakers</h1>
@@ -63,12 +87,16 @@ export default function Home() {
           <span>$250.00</span>
 
           <div className="buttons">
-            <button className="amount-btn">+</button>
-            <button className="amount-btn amount" disabled>
-              0
+            <button onClick={increment_Amount} className="amount-btn plus">
+              +
             </button>
-            <button className="amount-btn">-</button>
-            <button className="add-btn">
+            <button className="amount-btn amount" disabled>
+              {amounts}
+            </button>
+            <button onClick={decrement_Amount} className="amount-btn minus">
+              -
+            </button>
+            <button onClick={ multi_ply}className="add-btn">
               {" "}
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
                 <path
@@ -84,8 +112,10 @@ export default function Home() {
         </div>
       </div>
 
-      
-      < Image_carousel carousel={carousel_display} setCarousel={setCarousel_Display}/>      
+      <Image_carousel
+        carousel={carousel_display}
+        setCarousel={setCarousel_Display}
+      />
     </>
   );
 }

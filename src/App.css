@@ -405,6 +405,12 @@ background: transparent;
   max-height: 100vh;
   overflow: hidden;
 }
+.plus:hover{
+  background-color: rgb(245, 233, 212);
+}
+.minus:hover{
+  background-color: rgb(245, 233, 212);
+}
 
 @media all and (max-width:2222px){
   .toggler{display: none;}
@@ -452,14 +458,21 @@ background: transparent;
     width: 100%;
   }
 }
-@media all and (max-width:750px){
+@media all and (max-width:770px){
 
   .image-section{
-    width: 100%;
-    clear: both;
+    width: 60%;
+    height: 40%;
+    margin-left: -2rem;
+    
   }
   .info-section{
-    width: 100%;
+    width: 50%;
+    height: 40%;
+  }
+  .body-container{
+    margin-top: -4rem;
+    margin-bottom: 4rem;
   }
 }
 @media all and (max-width:709px){
@@ -495,7 +508,7 @@ background: transparent;
 }
 @media all and (max-width:650px){
   .nav-item-logo{
-      margin: 0 auto;
+     margin:0 auto;
   }
   .image-carousel-display{
     top:10%;
@@ -505,11 +518,11 @@ background: transparent;
   }
   .navbar{
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     align-items: center;
     height: 10vh;
     width: 100%;
-    padding-left: 5rem;
+    padding-left: 1rem;
   }
   .nav-item {
     display: none;
@@ -517,10 +530,17 @@ background: transparent;
   .toggler{
     color: orange;
     display: inline-block;
+    border: none;
+    width:30px;
+    height:30px;
     
   }
   .nav-item-container-right{
-    margin-left: 3rem;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right:1rem;
   }
   .info-section{
     width: 60%;
@@ -544,14 +564,13 @@ background: transparent;
 @media all and (max-width:580px){
   .info-section{
     width: 90%;
-    margin-top: 120%;
+    margin-top: 110%;
   }
   .image-carousel-display{
     top:11%;
-    width: 70%;
+    width: 100%;
     margin:0 auto;
     height: 55vh;
-    margin-left: 5rem;
   }
 }
 @media all and (max-width:494px){
@@ -582,13 +601,13 @@ background: transparent;
 @media all and (max-width:451px){
   .info-section{
     width: 90%;
-    margin-top: 140%;
+    margin-top: 100%;
   }
   .image-carousel-display{
     top:12%;
     width: 100%;
     margin:auto;
-    height: 55vh;
+    height: 40vh;
   }
   
 }
@@ -601,36 +620,38 @@ background: transparent;
     top:12%;
     width: 100%;
     margin:auto;
-    height: 45vh;
+    height: 35vh;
   }
   
 }
-@media all and (max-width:369px){
+@media all and (max-width:379px){
   .info-section{
     width: 90%;
-    margin-top: 130%;
+    margin-top: 100%;
+    
   }
   .image-carousel-display{
     top:12%;
     width: 100%;
-    height: 40vh;
+    height: 35vh;
     margin:auto;
   }
   
 }
-@media all and (max-width:363px){
-  .navbar .toggler{
-    margin-left: 5rem;
+@media all and (max-width:343px){
+  .nav-item-logo{
+    font-size: 23px;
+    margin-left: -1.5rem;
   }
-  .navbar .nav-item-container-right{
-    margin-right: 5rem;
+
+  .toggler{
+   
   }
-  
 }
 @media all and (max-width:301px){
   .info-section{
     width: 90%;
-    margin-top: 200%;
+    margin-top: 180%;
   }
   .image-carousel-display{
     top:12%;
@@ -667,6 +688,13 @@ background: transparent;
   .navbar{
     padding: 0 0.5rem;
   }
+  .nav-item-logo{
+    font-size: 23px;
+    margin-left: -1.5rem;
+  }
+  .nav-item-container-right{
+    width: 10%;
+  }
   
 }
 @media all and (max-width:261px){
@@ -682,6 +710,10 @@ background: transparent;
   .navbar{
     padding: 0 1rem;
   }
+  .nav-item-logo{
+    font-size: 18px;
+    margin-left: -1.5rem;
+  }
   
 }
 @media all and (max-width:281px){
@@ -693,6 +725,10 @@ background: transparent;
     top:12%;
     width: 100%;
     height: 30vh;
+  }
+  .nav-item-logo{
+    font-size: 18px;
+    margin-left: -1.5rem;
   }
   
 }
