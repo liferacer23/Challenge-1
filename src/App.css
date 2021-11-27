@@ -417,7 +417,8 @@ background: transparent;
 }
 @media all and (max-width:1222px){
   .image-section{
-    width: 42vw;
+    width: 80vw;
+    height: 50;
   }
   .info-section{
     width: 40vw;
@@ -426,7 +427,7 @@ background: transparent;
 }
 @media all and (max-width:1087px){
   .image-section{
-    width: 42vw;
+    width: 55vw;
   }
   .info-section{
     width: 40vw;
@@ -462,13 +463,14 @@ background: transparent;
 
   .image-section{
     width: 60%;
-    height: 40%;
+    height: 60%;
     margin-left: -2rem;
     
   }
   .info-section{
     width: 50%;
     height: 40%;
+    margin-top: -8rem;
   }
   .body-container{
     margin-top: -4rem;
