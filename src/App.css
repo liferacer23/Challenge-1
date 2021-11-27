@@ -417,7 +417,7 @@ background: transparent;
 }
 @media all and (max-width:1222px){
   .image-section{
-    width: 80vw;
+    width: 55vw;
     height: 50;
   }
   .info-section{
@@ -435,28 +435,29 @@ background: transparent;
 }
 @media all and (max-width:992px){
   .image-section{
-    width: 46vw;
+    width: 55vw;
   }
   .info-section{
-    width: 45vw;
+    width: 40vw;
   }
 }
 @media all and (max-width:872px){
   .image-section{
-    width: 70vw;
+    width: 55vw;
   }
   .info-section{
-    width: 50vw;
+    width: 40vw;
   }
 }
 @media all and (max-width:842px){
 
   .image-section{
-    width: 100%;
-    clear: both;
+    width: 60vw;
+    height: 60vh;
+    margin-left: -1rem;
   }
   .info-section{
-    width: 100%;
+    width: 40vw;
   }
 }
 @media all and (max-width:770px){
